@@ -1,0 +1,56 @@
+.cardContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.cards {
+  box-shadow: 1px 1px 2px 2px grey;
+  margin: 10px;
+  color: rgb(53, 53, 53);
+  height: 480px;
+  width: 250px;
+  transition: 0.3s;
+}
+.cards > img {
+  width: 100%;
+}
+.cards > p {
+  line-height: 12px;
+  margin-left: 10px;
+}
+.cards:hover {
+  width: 300px;
+  height: 550px;
+  background-color: gray;
+  color: aliceblue;
+}
+.CardDetailComponent {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.CardDetailComponent > div > img {
+  margin: 20px;
+}
+.CardDetailComponent > div:nth-child(2) {
+  width: 300px;
+  margin: 50px;
+}
+.CardDetailComponent > div:nth-child(2) > button {
+  margin-top: 50px;
+  height: 50px;
+  background-color: #222222;
+  color: #c2c1c1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: 0.3s;
+  text-decoration: none;
+  border: none;
+}
+
+.CardDetailComponent > div:nth-child(2) > button:hover {
+  background-color: #5f5f5f;
+}
